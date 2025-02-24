@@ -1,0 +1,91 @@
+/* Sidebar Styling */
+.sidebar {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+}
+
+.sidebar h5 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.filter-btn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+button {
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin: 5px 0;
+}
+button.active {
+    background-color: #0F83FC !important; 
+}
+
+/* button:hover, button:focus {
+    background-color: #146600; 
+    color: #146600;
+} */
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        display: block;
+    }
+    
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* Search bar styles */
+#search-bar {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #003366;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    outline: none;
+}
+
+#search-bar:focus {
+    border-color: #003366;
+    box-shadow: 0 0 5px rgba(0, 76, 151, 0.438)
+}
+
+/* Placeholder text styling */
+#search-bar::placeholder {
+    color: #A9A9A9;
+    font-style: italic;
+}
+
+.card-text {
+    font-size: 1.6rem;
+    color: black;
+}

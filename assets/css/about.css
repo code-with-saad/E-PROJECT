@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 10px;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* About Us Start */
+.about-our-comp-para {
+  max-width: 55%;
+  width: 100%;
+  line-height: 1.7;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 542px) {
+  .about-our-comp-para {
+    max-width: 90%;
+  }
+}
+
+/* About Us End */
+
+/* Why us Start */
+
+.why-a1uniform {
+  padding: 40px 0;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin: 0 100px;
+}
+
+.feature {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+  align-items: center;
+}
+
+.feature-image img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.feature-text {
+  flex-grow: 1;
+}
+
+.feature-text p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 880px) {
+  .features {
+    grid-template-columns: 1fr;
+    margin: 0 20px;
+  }
+
+  .feature {
+    flex-direction: column;
+    text-align: center;
+  }
+  .reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feature-image img {
+    max-width: 100%;
+  }
+
+  .feature-text p {
+    font-size: 14px;
+  }
+}
+
+/* Why us End */
+
+/* Counter Start */
+
+/* .counters-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0;
+}
+
+.counter {
+  background-color: #f9f9f9;
+  padding: 35px 10px;
+  width: 250px;
+  border-radius: 3px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+}
+
+.counter:hover {
+  transform: translateY(-10px);
+}
+
+.counter-icon {
+  font-size: 40px;
+  color: #e74c3c;
+  margin-bottom: 10px;
+}
+
+.counter-number {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+
+.counter p {
+  font-size: 18px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .counters-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .counter {
+    margin-bottom: 20px;
+  }
+} */
+
+.card {
+  border: none;
+}
+
+.card h2, .card h2 span {
+  color: #007bff;
+}
+
+.card h2 {
+  font-size: 2.5rem;
+}
+
+.card:hover {
+  background-color: #007bff !important;
+  color: white !important;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card:hover h2, 
+.card:hover h2 span, 
+.card:hover p, 
+.card:hover .h5 {
+  color: white !important;
+}
+
+.card p {
+  margin-bottom: 0;
+}
+
+.display-4 {
+  font-size: 2.5rem;
+}
+
+.h5 {
+  font-size: 1.25rem;
+}
+
+.small {
+  font-size: 0.875rem;
+}
+
+/* Counter End */
