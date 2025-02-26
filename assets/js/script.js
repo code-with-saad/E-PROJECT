@@ -57,33 +57,15 @@ goTopBtn.addEventListener('click', function(event) {
 
 
 
-
-
-
-
-
-
-
-
-// Test
-
-// script.js
-
-
-
-
-
-
-
-// script.js
+// category js
 
 document.querySelectorAll('.product-card').forEach(card => {
   card.addEventListener('click', function (event) {
-      event.preventDefault();  // Prevent the default action
+      event.preventDefault();  
       const category = this.getAttribute('data-category');
-      console.log("Selected category on click:", category);  // Log the selected category
+      console.log("Selected category on click:", category);  
       localStorage.setItem('selectedCategory', category);
-      window.location.href = 'products.html'; // Redirect to product page
+      window.location.href = 'products.html';
   });
 });
 

@@ -108,38 +108,38 @@
         <div class="form-row">
           <div class="form-group">
             <label for="name">Name:</label>
-            <input required type="text" id="name" name="name">
+            <input type="text" required id="name" name="name">
           </div>
           <div class="form-group">
             <label for="phone">Phone:</label>
-            <input required type="tel" id="phone" name="phone">
+            <input type="tel" required id="phone" name="phone">
           </div>
         </div>
 
         <div class="form-row">
           <div class="form-group">
             <label for="age">Age:</label>
-            <input required type="number" id="age" name="age">
+            <input type="number" required id="age" name="age">
           </div>
           <div class="form-group">
             <label for="email">E-mail:</label>
-            <input required type="email" id="email" name="email">
+            <input type="email" required id="email" name="email">
           </div>
         </div>
 
         <div class="question">
           <div class="question-header">What aspects did you enjoy or didn't enjoy about our services?</div>
-          <textarea required class="response-area" name="serviceExperience"></textarea>
+          <textarea class="response-area" required name="serviceExperience"></textarea>
         </div>
 
         <div class="question">
           <div class="question-header">Did the final creative output meet your expectations?</div>
-          <textarea required class="response-area" name="creativeOutput"></textarea>
+          <textarea class="response-area" required name="creativeOutput"></textarea>
         </div>
 
         <div class="question">
           <div class="question-header">How likely are you to recommend our agency's services to others?</div>
-          <textarea required class="response-area" name="recommendation"></textarea>
+          <textarea class="response-area" required name="recommendation"></textarea>
         </div>
 
         <button type="submit" class="submit-btn">Submit Feedback</button>
@@ -148,10 +148,15 @@
     </div>
 
     <script>
-      document.getElementById('feedbackForm').addEventListener('submit', function (e) {
-        e.preventDefault();
-        alert('Thank you for your feedback!');
-        this.reset();
+      document.getElementById('feedbackForm').addEventListener('submit', function (event) {
+        if (!this.checkValidity()) {
+          event.preventDefault();
+          alert('Please fill out all required fields.');
+        } else {
+          event.preventDefault();
+          alert('Thank you for your feedback!');
+          this.reset();
+        }
       });
     </script>
 
